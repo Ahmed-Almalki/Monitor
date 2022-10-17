@@ -716,9 +716,7 @@ function onConnectionLost(responseObject) {
 humiii=""
 temppp=""
 function onMessageArrived(message) {
-  console.log("onMessageArrived:"+message.payloadString);
-  
-      console.log("onMessageArrived: " + message.payloadString);
+  console.log("onMessageArrived: " + message.payloadString);
   	if (message.destinationName === "aalmalki0101/temperature"){
 	temppp =message.payloadString;
 	}else if(message.destinationName === "aalmalki0101/humidity"){
